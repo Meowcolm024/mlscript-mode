@@ -1,0 +1,23 @@
+trait Bar {
+  fun bar: int
+}
+
+class Foo(foo: int, name: string) extends Bar {
+  fun bar = foo * 2
+}
+
+fun hi(x: bool): 1 | 2 = if x then 1 else 2
+
+// test comment class Hi
+
+let x: string /* comment */ = "hello world"
+
+/* hello trait
+   this is another test
+*/
+
+fun bye(a: Array['t]): Foo = error
+
+mixin M {
+  fun m = 1
+}
